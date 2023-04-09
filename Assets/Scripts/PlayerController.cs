@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float positionPitchFactor = -1.5f;
     [SerializeField] float controlPitchFactor = -7.5f;
     [SerializeField] float positionYawFactor = 0.5f;
-    [SerializeField] float controlRollFactor = 2f;
+    [SerializeField] float controlRollFactor = -2f;
 
     // Update is called once per frame
     void Update()
