@@ -146,6 +146,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 26166083435638166}
     m_Modifications:
+    - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6100858979458843214}
+    - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6100858980126271725}
     - target: {fileID: 1652438462599189752, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.08401108
@@ -211,5 +223,15 @@ PrefabInstance:
 --- !u!4 &23407534589103517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4762301427027483433, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+  m_PrefabInstance: {fileID: 4775010696290064052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6100858979458843214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1652438462599189754, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+  m_PrefabInstance: {fileID: 4775010696290064052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6100858980126271725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1652438462997134937, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
   m_PrefabInstance: {fileID: 4775010696290064052}
   m_PrefabAsset: {fileID: 0}
