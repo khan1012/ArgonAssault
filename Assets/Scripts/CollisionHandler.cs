@@ -7,10 +7,23 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashParticles;
+    ScoreBoard scoreBoard;
+
+    void Start()
+    {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
-        StartCrashSequence();
+        if (scoreBoard.Health <= 0)
+        {
+            StartCrashSequence();
+        }
+        else
+        {
+            scoreBoard.DecreaseHealth(20);
+        }
     }
 
     void StartCrashSequence()

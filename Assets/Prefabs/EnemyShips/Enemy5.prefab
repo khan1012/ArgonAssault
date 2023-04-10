@@ -647,6 +647,7 @@ GameObject:
   - component: {fileID: 3972612390739493184}
   - component: {fileID: 3983051543364731540}
   - component: {fileID: 3991665355287603120}
+  - component: {fileID: -2235948033133189099}
   m_Layer: 0
   m_Name: Enemy5
   m_TagString: Untagged
@@ -720,6 +721,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-2235948033133189099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978012290381110816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093f046fdbd4c73468fbcd71b4d0c2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCrashParticles: {fileID: 3200836327345539238, guid: 298672ff77031594c98514e1456c8b53, type: 3}
+  parentForSpawnAtRuntime: {fileID: 0}
+  pointsPerHit: 25
 --- !u!1 &4139668234143856712
 GameObject:
   m_ObjectHideFlags: 0
