@@ -8,15 +8,24 @@ public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashParticles;
     ScoreBoard scoreBoard;
+    bool disableCrash;
 
     void Start()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
     }
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            disableCrash = true;
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
-        if (scoreBoard.Health <= 0)
+        if (!disableCrash && scoreBoard.Health <= 0)
         {
             StartCrashSequence();
         }
