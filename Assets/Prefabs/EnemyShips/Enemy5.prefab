@@ -735,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCrashParticles: {fileID: 3200836327345539238, guid: 298672ff77031594c98514e1456c8b53, type: 3}
   parentForSpawnAtRuntime: {fileID: 0}
-  pointsPerHit: 25
+  pointsPerHit: 5
 --- !u!1 &4139668234143856712
 GameObject:
   m_ObjectHideFlags: 0
