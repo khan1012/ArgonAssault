@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashParticles;
+    AudioSource crashAudioSource;
     ScoreBoard scoreBoard;
     bool disableCrash;
+    bool isTransitioning;
 
     void Start()
     {
+        crashAudioSource = GetComponent<AudioSource>();
         scoreBoard = FindObjectOfType<ScoreBoard>();
     }
 
@@ -22,6 +25,11 @@ public class CollisionHandler : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (isTransitioning)
+        {
+            return;
+        }
+
         if (!disableCrash && scoreBoard.Health <= 0)
         {
             StartCrashSequence();
@@ -34,6 +42,8 @@ public class CollisionHandler : MonoBehaviour
 
     void StartCrashSequence()
     {
+        isTransitioning = true;
+        crashAudioSource.Play();
         crashParticles.Play();
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<PlayerController>().enabled = false;

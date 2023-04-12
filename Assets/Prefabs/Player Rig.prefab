@@ -147,6 +147,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 26166083435638166}
     m_Modifications:
     - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+      propertyPath: xRange
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+      propertyPath: yRange
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
+      propertyPath: controlRollFactor
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 550851961886249162, guid: 4bb31e3b0ccdff24abd25986e8b6f569, type: 3}
       propertyPath: lasers.Array.size
       value: 2
       objectReference: {fileID: 0}
