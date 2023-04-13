@@ -8,4 +8,4 @@ A simple unity game which uses Terrain.
 <b>Fire :</b> &nbsp; Left Mouse Click / Left Ctrl <br/>
 <b>Exit Game :</b> &nbsp; Esc <br/> <br/>
 
-![](ScreenCapture.png)
+![](https://user-images.githubusercontent.com/21015164/231752092-4f821e78-7380-4584-92b2-b1e3ed37293b.png)
